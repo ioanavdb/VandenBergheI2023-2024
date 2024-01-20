@@ -27,25 +27,36 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <CheckBox x:Name="chckb_green" Content="Green" HorizontalAlignment="Left" Margin="486,304,0,0" VerticalAlignment="Top" Checked="chckb_green_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_purple" Content="Purple" HorizontalAlignment="Left" Margin="486,344,0,0" VerticalAlignment="Top" Checked="chckb_purple_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_blue" Content="Blue" HorizontalAlignment="Left" Margin="486,324,0,0" VerticalAlignment="Top" Checked="chckb_blue_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_red" Content="Red" HorizontalAlignment="Left" Margin="400,304,0,0" VerticalAlignment="Top" Checked="chckb_red_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_orange" Content="Orange" HorizontalAlignment="Left" Margin="400,324,0,0" VerticalAlignment="Top" Checked="chckb_orange_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_yellow" Content="Yellow" HorizontalAlignment="Left" Margin="400,344,0,0" VerticalAlignment="Top" Checked="chckb_yellow_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_bolt" Content="Bolt" HorizontalAlignment="Left" Margin="269,304,0,0" VerticalAlignment="Top" Checked="chckb_bolt_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_italian" Content="Italian" HorizontalAlignment="Left" Margin="269,324,0,0" VerticalAlignment="Top" Checked="chckb_italian_Checked" FontFamily="Arial Black"/>
-        <CheckBox x:Name="chckb_Underlined" Content="Underlined" HorizontalAlignment="Left" Margin="269,344,0,0" VerticalAlignment="Top" Checked="chckb_Underlined_Checked" FontFamily="Arial Black"/>
+        <CheckBox x:Name="chckb_green" Content="Green" HorizontalAlignment="Left" Margin="552,304,0,0" VerticalAlignment="Top" Checked="chckb_green_Checked" FontFamily="Cascadia Mono SemiBold" Height="16" Width="74" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_purple" Content="Purple" HorizontalAlignment="Left" Margin="552,344,0,0" VerticalAlignment="Top" Checked="chckb_purple_Checked" FontFamily="Cascadia Mono SemiBold" Height="16" Width="78" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_blue" Content="Blue" HorizontalAlignment="Left" Margin="552,325,0,0" VerticalAlignment="Top" Checked="chckb_blue_Checked" FontFamily="Cascadia Mono SemiBold" Height="15" Width="62" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_red" Content="Red" HorizontalAlignment="Left" Margin="446,304,0,0" VerticalAlignment="Top" Checked="chckb_red_Checked" FontFamily="Cascadia Mono SemiBold" Height="16" Width="56" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_orange" Content="Orange" HorizontalAlignment="Left" Margin="446,325,0,0" VerticalAlignment="Top" Checked="chckb_orange_Checked" FontFamily="Cascadia Mono SemiBold" Height="15" Width="84" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_yellow" Content="Yellow" HorizontalAlignment="Left" Margin="446,344,0,0" VerticalAlignment="Top" Checked="chckb_yellow_Checked" FontFamily="Cascadia Mono SemiBold" Height="16" Width="78" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_bolt" Content="Bolt" HorizontalAlignment="Left" Margin="269,304,0,0" VerticalAlignment="Top" Checked="chckb_bolt_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_italian" Content="Italian" HorizontalAlignment="Left" Margin="269,324,0,0" VerticalAlignment="Top" Checked="chckb_italian_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
+        <CheckBox x:Name="chckb_Underlined" Content="Underlined" HorizontalAlignment="Left" Margin="269,344,0,0" VerticalAlignment="Top" Checked="chckb_Underlined_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
         <Label x:Name="lbl_opmaak" Content="Opmaak" HorizontalAlignment="Left" Height="42" Margin="254,222,0,0" Width="546" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF8A8CB7" FontSize="24" FontFamily="Cambria Math" FontStyle="Italic" VerticalAlignment="Top" VerticalContentAlignment="Center" Foreground="Black">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="269,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"><Run Language="nl-be" Text="Stijl"/><LineBreak/><Run Language="nl-be"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="402,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"><Run Language="nl-be" Text="Kleur"/><LineBreak/><Run Language="nl-be"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="btn_copy" Content="Copy" HorizontalAlignment="Left" Height="34" Margin="568,120,0,0" VerticalAlignment="Top" Width="103" Click="btn_copy_Click"/>
-        <Button x:Name="btn_paste" Content="Paste" HorizontalAlignment="Left" Height="23" Margin="535,80,0,0" VerticalAlignment="Top" Width="113" Click="btn_paste_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="269,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" FontFamily="Arial Black" FontSize="14"><Run Language="nl-be" Text="Stijl"/><LineBreak/><Run Language="nl-be"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="448,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontFamily="Arial Black" FontSize="14"><Run Language="nl-be" Text="Kleur"/><LineBreak/><Run Language="nl-be"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="btn_copy" Content="Copy" HorizontalAlignment="Left" Height="46" Margin="415,140,0,0" VerticalAlignment="Top" Width="118" Click="btn_copy_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_paste" Content="Paste" HorizontalAlignment="Left" Height="46" Margin="415,80,0,0" VerticalAlignment="Top" Width="118" Click="btn_paste_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
+        <Line X1="320" Y1="0" X2="320" Y2="120" Stroke="Black" StrokeThickness="2" Margin="87,264,-77,-264"/>
+        <Line X1="360" Y1="0" X2="360" Y2="120" Stroke="Black" StrokeThickness="2" Margin="306,264,-296,-264"/>
+        <Line X1="360" Y1="0" X2="360" Y2="169" Stroke="Black" StrokeThickness="2" Margin="46,53,-36,-53"/>
 
     </Grid>
 </Window>
