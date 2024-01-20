@@ -43,6 +43,8 @@
         </Label>
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="269,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"><Run Language="nl-be" Text="Stijl"/><LineBreak/><Run Language="nl-be"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="402,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"><Run Language="nl-be" Text="Kleur"/><LineBreak/><Run Language="nl-be"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="btn_copy" Content="Copy" HorizontalAlignment="Left" Height="34" Margin="568,120,0,0" VerticalAlignment="Top" Width="103" Click="btn_copy_Click"/>
+        <Button x:Name="btn_paste" Content="Paste" HorizontalAlignment="Left" Height="23" Margin="535,80,0,0" VerticalAlignment="Top" Width="113" Click="btn_paste_Click"/>
 
 
     </Grid>

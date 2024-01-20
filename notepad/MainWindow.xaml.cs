@@ -150,6 +150,21 @@ namespace notepad
             }
         }
 
-        
+        private void btn_copy_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(txtb_invoeren.Text);
+        }
+
+        private void btn_paste_Click(object sender, RoutedEventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                
+                txtb_invoeren.Text += Clipboard.GetText();
+            }
+        }
+
+       
     }
-}
+    }
+
