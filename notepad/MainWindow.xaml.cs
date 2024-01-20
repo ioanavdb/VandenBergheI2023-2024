@@ -20,9 +20,10 @@ namespace notepad
         {
             InitializeComponent();
 
-
-
+            FormatDT();
         }
+
+        
 
         private void btn_addnew_Click(object sender, RoutedEventArgs e)
         {
@@ -164,7 +165,15 @@ namespace notepad
             }
         }
 
-       
+        void FormatDT()
+        {
+            var dt = DateTime.Now;
+            txtb_datum_tijd.Text = dt.ToString();
+        }
+
+
+
+
     }
-    }
+}
 

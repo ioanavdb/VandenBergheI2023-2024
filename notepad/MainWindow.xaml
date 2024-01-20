@@ -57,6 +57,8 @@
         <Line X1="320" Y1="0" X2="320" Y2="120" Stroke="Black" StrokeThickness="2" Margin="87,264,-77,-264"/>
         <Line X1="360" Y1="0" X2="360" Y2="120" Stroke="Black" StrokeThickness="2" Margin="306,264,-296,-264"/>
         <Line X1="360" Y1="0" X2="360" Y2="169" Stroke="Black" StrokeThickness="2" Margin="46,53,-36,-53"/>
+        <Line X1="360" Y1="0" X2="360" Y2="169" Stroke="Black" StrokeThickness="2" Margin="304,53,-294,-53"/>
+        <TextBox x:Name="txtb_datum_tijd" HorizontalAlignment="Left" Height="42" Margin="675,6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="118"/>
 
     </Grid>
 </Window>
