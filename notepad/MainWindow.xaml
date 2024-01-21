@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:notepad"
         mc:Ignorable="d"
-        Title="MainWindow" Height="399" Width="800">
+        Title="MainWindow" Height="399" Width="688">
     <Grid>
         <Label x:Name="lbl_notepad" Content="NOTEPAD" HorizontalAlignment="Center" Height="53" VerticalAlignment="Top" Width="800" Background="#FF556AA6" HorizontalContentAlignment="Center" FontSize="36" FontFamily="Calisto MT" FontWeight="Bold">
             <Label.Effect>
@@ -36,7 +36,7 @@
         <CheckBox x:Name="chckb_bolt" Content="Bolt" HorizontalAlignment="Left" Margin="269,304,0,0" VerticalAlignment="Top" Checked="chckb_bolt_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
         <CheckBox x:Name="chckb_italian" Content="Italian" HorizontalAlignment="Left" Margin="269,324,0,0" VerticalAlignment="Top" Checked="chckb_italian_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
         <CheckBox x:Name="chckb_Underlined" Content="Underlined" HorizontalAlignment="Left" Margin="269,344,0,0" VerticalAlignment="Top" Checked="chckb_Underlined_Checked" FontFamily="Cascadia Code" FontWeight="Bold"/>
-        <Label x:Name="lbl_opmaak" Content="Opmaak" HorizontalAlignment="Left" Height="42" Margin="254,222,0,0" Width="546" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF8A8CB7" FontSize="24" FontFamily="Cambria Math" FontStyle="Italic" VerticalAlignment="Top" VerticalContentAlignment="Center" Foreground="Black">
+        <Label x:Name="lbl_opmaak" Content="Opmaak" HorizontalAlignment="Left" Height="42" Margin="254,222,0,0" Width="434" HorizontalContentAlignment="Center" FontWeight="Bold" Background="#FF8A8CB7" FontSize="24" FontFamily="Cambria Math" FontStyle="Italic" VerticalAlignment="Top" VerticalContentAlignment="Center" Foreground="Black">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -55,10 +55,24 @@
         </Button>
 
         <Line X1="320" Y1="0" X2="320" Y2="120" Stroke="Black" StrokeThickness="2" Margin="87,264,-77,-264"/>
-        <Line X1="360" Y1="0" X2="360" Y2="120" Stroke="Black" StrokeThickness="2" Margin="306,264,-296,-264"/>
         <Line X1="360" Y1="0" X2="360" Y2="169" Stroke="Black" StrokeThickness="2" Margin="46,53,-36,-53"/>
-        <Line X1="360" Y1="0" X2="360" Y2="169" Stroke="Black" StrokeThickness="2" Margin="304,53,-294,-53"/>
-        <TextBox x:Name="txtb_datum_tijd" HorizontalAlignment="Left" Height="42" Margin="675,6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="txtb_datum_tijd" HorizontalAlignment="Left" Height="20" Margin="9,6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="btn_undo" Content="Undo" HorizontalAlignment="Left" Margin="552,80,0,0" VerticalAlignment="Top" Click="btn_undo_Click" Width="118" Height="46">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_redo" Content="Redo" HorizontalAlignment="Left" Margin="552,140,0,0" VerticalAlignment="Top" Click="btn_redo_Click" Width="118" Height="46" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Height="42" Margin="185,334,0,0" VerticalAlignment="Top" Width="59" Click="btn_save_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
 
     </Grid>
 </Window>

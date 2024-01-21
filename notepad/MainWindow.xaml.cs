@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Microsoft.Win32;
+using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace notepad
 {
@@ -21,6 +24,10 @@ namespace notepad
             InitializeComponent();
 
             FormatDT();
+
+
+          
+
         }
 
         
@@ -94,7 +101,7 @@ namespace notepad
         {
             if (chckb_orange.IsChecked == true)
             {
-                txtb_invoeren.Foreground = Brushes.Red;
+                txtb_invoeren.Foreground = Brushes.Orange;
             }
             else
             {
@@ -107,7 +114,7 @@ namespace notepad
         {
             if (chckb_yellow.IsChecked == true)
             {
-                txtb_invoeren.Foreground = Brushes.Red;
+                txtb_invoeren.Foreground = Brushes.Yellow;
             }
             else
             {
@@ -119,7 +126,7 @@ namespace notepad
         {
             if (chckb_green.IsChecked == true)
             {
-                txtb_invoeren.Foreground = Brushes.Red;
+                txtb_invoeren.Foreground = Brushes.Green;
             }
             else
             {
@@ -131,7 +138,7 @@ namespace notepad
         {
             if (chckb_blue.IsChecked == true)
             {
-                txtb_invoeren.Foreground = Brushes.Red;
+                txtb_invoeren.Foreground = Brushes.Blue;
             }
             else
             {
@@ -171,9 +178,39 @@ namespace notepad
             txtb_datum_tijd.Text = dt.ToString();
         }
 
+        private void btn_undo_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtb_invoeren.CanUndo)
+            {
+                txtb_invoeren.Undo();
+            }
+        }
 
+        private void btn_redo_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtb_invoeren.CanRedo)
+            {
+                txtb_invoeren.Redo();
+            }
+        }
 
+        private void btn_markeer_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void btn_save_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            if (dlg.ShowDialog() == true)
+            {
+                File.WriteAllText(dlg.FileName,txtb_invoeren.Text);           
+            }
+        }
+
+       
     }
-}
+    }
+    
+
 
